@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: quickSandMedium;
+    src: url(./font/static/Quicksand-Medium.ttf);
+}
+@font-face {
+    font-family: quickSandBold;
+    src: url(./font/static/Quicksand-Bold.ttf);
+}
+:root{
+    --icon--before : <i class="fa-solid fa-bars"></i>;
+}
+.container {
+    background-color: #ECF6FA;
+    width: 100%;
+    height: auto;
+}
+.navbar {
+    padding: 25px 90px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__img {
+    width: 140px;
+    height: 55px;
+}
+.navbar__img img {
+    width: 100%;
+    object-fit: cover;
+}
+.navbar__middle {
+    display: flex;
+    align-items: center;
+    margin: -6px 42px 0px 0px;
+}
+.navbar__middle ul{
+    gap: 29.5px;
+    list-style: none;
+    display: flex;
+}
+.navbar__text {
+    font-family: quickSandBold;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    letter-spacing: 0.98px;
+    color: #333333;
+}
+.navbar__text:hover {
+    color: #f35a38;
+    transition: .4s linear;
+}
+.navbar__right{
+    float: right;
+    display: flex;
+    position: relative;
+    left: -13px;
+    align-items: center;
+    padding: 0px 5px 6px 0px;
+}
+.navbar__right i {
+    font-size: 1.2rem;
+    color: #4E5051;
+}
+.navbar__right .navbar__line {
+    height: 18px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    margin: 5px 0px 0px 17px;
+}
+.navbar__right .line:nth-child(1) {
+    position: absolute;
+    height: 1.5px;
+    transition: 0.2s linear;
+    width: 40px;
+    background-color: black;
+    right: 0;
+}.navbar__right .line:nth-child(2) {
+    position: absolute;
+    height: 1.5px;
+    width: 34px;
+    transition: 0.2s linear;
+    right: 0;
+    background-color: black;
+    bottom: 45%;
+}.navbar__right .line:nth-child(3) {
+    width: 29.5px;
+    transition: 0.2s linear;
+    position: absolute;
+    height: 1.5px;
+    right: 0;
+    background-color: black;
+    bottom: 0;
+}
+.navbar__right .navbar__line:hover .line:nth-child(1){
+    transition: 0.2s linear;
+    width: 25px;
+}.navbar__right .navbar__line:hover .line:nth-child(2){
+    transition: 0.2s linear;
+    width: 30px;
+}.navbar__right .navbar__line:hover .line:nth-child(3){
+    transition: 0.2s linear;
+    width: 35px;
+}
+.navbar_left{
+    visibility: hidden;
+}
+@media only screen and (max-width: 1023px){
+    .navbar__middle {
+        display: none;
+    }   
+    .navbar {
+        background-color: white;
+        padding: 25px 0px 25px;
+        position: relative;
+    }
+    .navbar__left {
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -5.5px;
+    left: 4.6%;
+    }
+    .navbar__right .line:nth-child(1) {
+        width: 37px;
+        height: 2.2px;
+    }.navbar__right .line:nth-child(2) {
+        width: 33px;
+        height: 2.4px;
+    }.navbar__right .line:nth-child(3) {
+        width: 27.5px;
+        height: 2.4px;
+    }
+    .navbar__right {
+        left: -50px;
+    padding: 0px 0px 15px 0px;
+    }
+    .navbar__right i {
+        font-size: 1.15rem;
+        margin-top: 3px;
+    }
+    .navbar__right .navbar__line {
+        margin: 5px 0px 0px 13px;
+    }
+    .navbar__img{
+        height: 50px;
+        width: 137px;
+    }
+    .navbar::before{
+        font-family: "Font Awesome 6 Free";
+        font-size: 18px;
+        content: "\f0c9";
+        font-weight: 900;
+        position: absolute;
+        left: 6%;
+        top: 34%;
+    }
+}
+@media only screen and (max-width: 992px){
+    .navbar::before{
+        font-family: "Font Awesome 6 Free";
+        font-size: 18px;
+        content: "\f0c9";
+        font-weight: 900;
+        position: absolute;
+        left: 16.4%;
+        top: 34%;
+    }
+    .navbar__left{
+        left: 4.7%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .navbar__right{
+        display: none;
+    }
+    .navbar__left{
+        left: 0.55%;
+        top: -5.4px;
+    }
+    .navbar__img{
+        width: 137px;
+    }
+    .navbar::before {
+        font-size: 18px;
+            left: 7.2%;
+        top: 34%;
+    }
+}
