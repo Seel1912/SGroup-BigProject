@@ -216,12 +216,10 @@
 .body__img::after{
     position: absolute;
     content: "";
-    width: 30%;
+    width: 35%;
     height: 100%;
-    right: -20px;
-    background-color: white;
-    opacity: 20%;
-    filter: blur(30px);
+    right: -17px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 150%) repeat scroll 0 0;
 }
 .body__img img {
     width: 100%;
@@ -265,7 +263,7 @@
     font-family: quickSandBold;
     display: flex;
     justify-content: center;
-    margin-top: 71px;
+    margin-top: 72px;
 }
 .feature__title{
     position: relative;
@@ -305,6 +303,7 @@
     justify-content: center;
     margin-top: 20px;
     align-items: center;
+    padding-bottom: 120px;
 }
 .feature__design,.feature__development,.feature__implement {
     width: 370px;
@@ -315,4 +314,145 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.feature__design:hover,.feature__implement:hover{
+    background: linear-gradient(to bottom, #f35a38 0%,#ff2339 100%) !important;
+}
+.feature__design:hover p,.feature__design:hover h3,.feature__design:hover span,.feature__implement:hover p,.feature__implement:hover h3,.feature__implement:hover span {
+    color: white;
+    transition: 0.5s linear;
+    animation: dropColor 0.5s linear;
+}
+@keyframes dropColor {
+    0%{
+        background: #f35a38;
+    }
+    100%{
+        background: #ff2339;
+    }
+}
+.feature__design:hover .feature__img,.feature__implement:hover .feature__img {
+    filter: brightness(0) invert(1);
+    transition: 0.5s linear;
+}
+.feature__design:hover h3::after,.feature__implement:hover h3::after{
+    transition: 0.5s linear;
+    background-color: white;
+}
+.feature__design span,.feature__implement span {
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+    font-family: quickSandBold;
+    color: #0e2258;
+    margin-top: 69px;
+}
+.feature__design p,.feature__implement p {
+    text-align: center;
+    color: #797979;
+    font-size: 14.43px;
+    margin: 26px 34px;
+    line-height: 24.3px;
+    letter-spacing: 0.5px;
+    font-family: 'Nunito';
+}
+.feature__design h3,.feature__implement h3 {
+    font-size: 13.3px;
+    font-family: quickSandMedium;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: -1.5px;
+    color: #696969;
+    left: -10px;
+}
+.feature__design h3::after,.feature__implement h3::after{
+    content: "";
+    position: absolute;
+    top:5px;
+    right: -19px;
+    width: 9.5px;
+    height: 9.5px;
+    border-radius: 50%;
+    background-color: #F35A38;
+}
+.feature__development span{
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+    font-family: quickSandBold;
+    color: white;
+    margin-top: 69px;
+}
+.feature__img img{
+    margin-top: 1px;
+    width: 70.5px;
+    height: 70.5px;
+}
+.feature__img{
+    position: relative;
+}
+.feature__img::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100px;
+    width: 100px;
+    background: url(./img/8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.07;
+    top: 33%;
+}
+.feature__development .feature__img::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100px;
+    width: 100px;
+    background: url(./img/8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    opacity: 0.07;
+    top: 33%;
+}
+.feature__development {
+    background: linear-gradient(to bottom, #f35a38 0%,#ff2339 100%) !important;
+}
+.feature__development p{
+    text-align: center;
+    color: white;
+    font-size: 14.43px;
+    margin: 26px 34px;
+    line-height: 24.3px;
+    letter-spacing: 0.5px;
+    font-family: 'Nunito';
+}
+.feature__development h3 {
+    font-size: 13.3px;
+    font-family: quickSandMedium;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: -1.5px;
+    color: white;
+    left: -10px;
+}
+.feature__development h3::after{
+    content: "";
+    position: absolute;
+    top:5px;
+    right: -19px;
+    width: 9.5px;
+    height: 9.5px;
+    border-radius: 50%;
+    background-color: white;
+}
+.feature__development .feature__img img{
+    filter: brightness(0) invert(1);
+}
+.brand {
+    width: 100%;
+    height: 146vh;
+    background-color: white;
 }
