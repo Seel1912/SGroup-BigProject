@@ -551,6 +551,40 @@
 
 .brand {
     width: 100%;
-    height: 146vh;
+    height: 1120px;
     background-color: white;
+    position: relative;
+}
+.brand__background {
+    width: 100%;
+    height: 1060px;
+    position: absolute;
+    bottom:0;
+}
+.brand__background img {
+    width: 100%;
+    height: 100%;
+}
+.brand__img {
+    width: 470px;
+    height: 525px;
+    position: absolute;
+    top: 120px;
+    left: 175px;
+    z-index: 2;
+}
+.brand__img::after{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background-color: #F8F9F9;
+    left: 30px;
+    top: 30px;
+    z-index: -1;
+}
+.brand__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
