@@ -668,21 +668,22 @@
     bottom: 125px;
     left: 175px;    
 }
-.brand-footer__line {
+
+.brand-footer__line,.achive-footer__line {
     height: 0.5px;
     color: #F35A38;
     background-color: #F35A38;
     width: 30px;
     display: block;
 }
-.brand-footer_description {
+.brand-footer_description,.achive-footer_description {
     color: #F35A38;
     position: absolute;
     top: -9px;
     left: 46px;
     font-family: quickSandBold;
 }
-.brand-footer__left h5 {
+.brand-footer__left h5 ,.achive-footer__left h5 {
     font-size: 36px;
     color: #0e2258;
     line-height: 43px;
@@ -690,7 +691,7 @@
     width: 40%;
     padding-top: 35px;
 }
-.brand-footer__left .brand-footer_description2 {
+.brand-footer__left .brand-footer_description2 ,.achive-footer__left .achive-footer_description2 {
     font-size: 15px;
     color: #666666;
     font-family: Nunito,sans-serif;
@@ -766,3 +767,94 @@
     text-align: right;
     font-family: quickSandBold;
 }
+.digital{
+    position: relative;
+}
+.digital .background__digital {
+    width: 100%;
+    height: 620px;
+}
+.background__digital img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 20% 0%;
+}
+.digital__box {
+    background-color: #0E2258;
+    position: absolute;
+    width: 671px;
+    height: 470px;
+    top: 229.5px;
+    left: 674px;
+    padding: 55px 56px 0px 60px;
+}
+.digital__box>h6 {
+    font-size: 36px;
+    font-family: quickSandBold,sans-serif;
+    color: #ffffff;
+    line-height: 43px;
+}
+.digital__box>p {
+    font-size: 14.8px;
+    color: #cccccc;
+    font-family: Nunito,sans-serif;
+    line-height: 24px;
+    margin-top: 23px;
+    margin-right: 1px;
+}
+.digital__content {
+    padding-top: 30px;
+    display: flex;
+}
+.digital__content h6 {
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #ffffff;
+    font-family: quickSandMedium;
+}
+.digital_left {
+    padding-right: 50px;
+    border-right:1px solid #56648A;
+}
+.digital_right {
+    padding-left: 50px;
+}
+.digital__content p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: Nunito;
+    margin-top: 5px;
+}
+.achive-footer {
+    width: 100%;
+    position: relative;
+    height: 1015px;
+    background-color: #ffffff;
+}
+.achive-footer__left {
+    position: absolute;
+    top: 383px;
+    left: 175px;
+}
+.achive-footer__left h5 {
+    width: 46%;
+}
+.achive-footer__left .achive-footer_description2{
+    width: 50%;
+}
+.achive__rotate{
+    position: absolute;
+    opacity: 0.3;
+    top: 250px;
+    left: 40px;
+}
+.achive__rotate img {
+    animation: rotate 20s linear infinite;
+}
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
