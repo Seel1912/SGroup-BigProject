@@ -655,7 +655,6 @@
 .brand__component .brand__description:nth-child(2){
     margin-top: 30px;
 }
-/* Fix icon */
 .brand__description::after{
     position: relative;
     font-family: "Font Awesome 6 Free";
@@ -767,4 +766,3 @@
     text-align: right;
     font-family: quickSandBold;
 }
-/* Fix this */
