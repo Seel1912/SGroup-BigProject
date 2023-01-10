@@ -26,26 +26,21 @@
 // create function
 // Input hoang
 // out hhoonngg
-function funcCheck(str) {
+function checkStr(str) {
     let str2 = ""
     for (let i = 0; i < str.length; i++) {
-        str2 = str2 + (str[i]) + (str[i])
+        str2 = str2 + str[i] + str[i]
     }
     return str2
 }
-function checkCondition(str) {
-    if (str != "a") {
-        return true
+function checkTime(times, cb) {
+    let result = ""
+    for (let i = 0; i < times; i++) {
+        result = result + checkStr("hoang")
     }
+    return result
 }
-
-console.log(funcCheck("hoang", checkCondition()))
-
-
-
-
-
-
+console.log(checkTime(9))
 
 
 
