@@ -1,1 +1,0 @@
-document.querySelectorAll(".hehe").style.background = "red";
