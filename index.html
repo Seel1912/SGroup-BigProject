@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="./icon/fontawesome-free-6.2.1-web/css/all.css">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./script.js">
         <title>Document</title>
     </head>
     <body>
@@ -16,7 +15,7 @@
             <div class="navbar__action--icon"><i class="fa-solid fa-magnifying-glass"></i> Search</div>
             <div class="navbar__action--icon"><i class="fa-solid fa-xmark"></i></div>
         </div>
-        <div class="navbar">
+        <div id="navbar__act" class="navbar" onscroll="scrollNavbar()">
             <div class="navbar__left">
                 <div class="navbar__img">
                     <img src="./logo.png" alt="">
@@ -32,22 +31,51 @@
                     <li class="navbar__text">BLOG</li>
                 </ul>
             </div>
-            <div class="navbar__right">
+            <div  class="navbar__right">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <div class="navbar__line">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
+                <button onclick="showTab()" >
+                    <div class="navbar__line">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </button>
             </div>
         </div>
-        <div class="navbar__right--tab">
-            
+        <div id="navbar__action--tab" class="navbar__right--tab">
+            <div class="navbar__tab--img">
+                <img src="./logo.png" alt="">
+            </div>
+            <div class="navbar__tab--icon">
+                <button onclick="hideTab()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <p>Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind.</p>
+            <div class="footer__component">
+                    <ul>
+                        <li><h6>ADDRESS</h6></li>
+                        <li><p>California, TX 70240</p></li>
+                        <li><h6>EMAIL</h6></li>
+                        <li><p>support@validtheme.com</p></li>
+                        <li><h6>OFFICE HOURS</h6></li>
+                        <li><p>Office Hours: 8:00 AM – 7:45 PM</p></li>
+                    </ul>
+            </div>
+            <div class="footer__component">
+                <ul>
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li><i class="fa-brands fa-behance"></i></li>
+                </ul>
+            </div>
         </div>
         <div class="body">
             <div class="body__background">
                 <div class="body__img">
-                    <img src="./img/creative-agency-banner-2.jpg" alt="">
+                    <img id="body__img1" src="./img/creative-agency-banner-2.jpg" alt="">
+                    <img id="body__img2" src="./img/creative-agency-banner-1.jpg" alt="">
                     <div class="body__img--content">
                         <p>WE LOVE TO CREATE</p>
                         <h1><b>Creative & <br> Digital</b> ideas</h1>
@@ -57,6 +85,10 @@
                             </button>
                         </span>
                     </div>
+                </div>
+                <div class="body__changeImg">
+                    <button onclick="showImg1()">01</button>
+                    <button onclick="showImg2()">02</button>
                 </div>
             </div>
         </div>
@@ -76,8 +108,7 @@
                 <div class="feature__img">
                     <img src="./img/creativity.png" alt="">
                 </div>
-                <p><b>Particular boisterous uncommonly are. Early wrong as so manor match. Him necessary shameless discovery consulted one.</b> 
-</p>
+                <p>Particular boisterous uncommonly are. Early wrong as so manor match. Him necessary shameless discovery consulted one.</p>
                 <h3>LEARN MORE</h3>
             </div>
             <div class="feature__development">
@@ -85,8 +116,7 @@
                 <div class="feature__img">
                     <img src="./img/secure.png" alt="">
                 </div>
-                <p><b>Particular boisterous uncommonly are. Early wrong as so manor match. Him necessary shameless discovery consulted one.</b> 
-                </p>
+                <p>Particular boisterous uncommonly are. Early wrong as so manor match. Him necessary shameless discovery consulted one.</p>
                 <h3>LEARN MORE</h3>
             </div>
             <div class="feature__implement">
@@ -94,8 +124,7 @@
                 <div class="feature__img">
                     <img src="./img/sugar-cubes.png" alt="">
                 </div>
-                <p><b>Particular boisterous uncommonly are. Early wrong as so manor match. Him necessary shameless discovery consulted one.</b> 
-                </p>
+                <p>Particular boisterous uncommonly are. Early wrong as so manor match. Him necessary shameless discovery consulted one.</p>
                 <h3>LEARN MORE</h3>
             </div>
         </div>
@@ -358,5 +387,6 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
