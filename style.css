@@ -748,6 +748,235 @@
         left: 7.2%;
         top: 34%;
     }
+    .body .body__background {
+        margin-left: 14px;
+        height: 880px;
+    }
+    .body__background .body__img {
+        width: 470px;
+        height: 582px;
+    }
+    .body__background .body__img #body__img1 {
+        display: block;
+    }
+    .body__background .body__img .body__img--content p {
+        margin-top: -52px;
+    }
+    .body__background .body__img .body__img--content h1 {
+        font-size: 38px;
+    }
+    .body__background .body__img .body__img--content span {
+        margin-top: -34px;
+    }
+    .container .feature__features {
+        margin-top: 300px;
+    }
+    .body__background .body__changeImg {
+        bottom: 4px;
+    }
+    .feature .feature__title h2 {
+        display: none;
+    }
+    .container .feature {
+        display: none;
+    }
+    .container .feature__features {
+        margin: 330px 0px 300px 30px;
+    }
+    .container .feature__features .feature__design, .container .feature__features .feature__development, .container .feature__features .feature__implement{
+        width: 88vw;
+        margin: 30px 0;
+    }
+    .feature__features {
+        height: 1220px;
+    }
+    .container .brand .brand__img {
+        left: 18px;
+        width: 92vw;
+        height: 525px;
+        top: 40px;
+    }
+    .container .brand .brand__data {
+        display: none;
+    }
+    .container .brand .brand-content {
+        right: 19px;
+        top: 33%;
+        width: 93vw;
+        text-align: left;
+    }
+    .container .brand .brand-content .brand__component ul {
+        display: block;
+    }
+    .brand__component ul .brand__description:nth-child(2) {
+        margin: 0px 61px 0px 0px;
+    }
+    .container .brand .brand-content .brand__component .brand__description::after {
+        top: -85px;
+    }
+    .container .brand {
+        height: 1955px;
+    }
+    .brand .brand-footer {
+        padding:0;
+    }
+    .brand .brand-footer .brand-footer__left {
+        margin-left: 20px;
+        margin-top: 90px;
+        align-items:flex-start;
+    }
+    .brand .brand-footer .brand-footer__left .brand-footer__line {
+        display: none;
+    }
+    .brand .brand-footer .brand-footer__left .brand-footer_description{
+        left: 0;
+    }
+    .brand .brand-footer .brand-footer__left h5 {
+        width: 95%;
+    }
+    .brand .brand-footer .brand-footer__left .brand-footer_description2 {
+        width: 93%;
+    }
+    .brand-footer .brand-footer__right {
+        left: 15px;
+        width: 95%;
+    }
+    .container .digital .digital__box {
+        height: 638px;
+        width: 469px;
+        left: 15px;
+        text-align: center;
+        padding: 45px;
+    }
+    .container .digital .digital__box>p {
+        margin-right: 2px;
+    }
+    .digital .digital__box .digital__content {
+        flex-direction: column;
+        text-align: start;
+    }
+    .digital .digital__box .digital__content .digital_left {
+        border: none;
+    }
+    .digital .digital__box .digital__content .digital_right {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .container .achive-footer {
+        padding: 0;
+        top: -50px;
+    }
+    .container .achive-footer .achive-footer__left .achive-footer__line {
+        display: none;
+    }
+    .container .achive-footer .achive__button {
+        top: 24%;
+        left: 32%;
+    }
+    .container .achive-footer .achive__analyst {
+        left: 0;
+        width: 100%;
+        background-color: white;
+        height: auto;
+    }
+    .container .achive-footer .achive__analyst .analyst__box {
+        width: 469px;
+        height: 301px;
+        background-color: white;
+        margin-top: 20px;
+    }
+    .container .achive-footer .achive__analyst .analyst__box::before{
+        display: none;
+    }
+    .container .feature__slide {
+        top: 0px;
+        margin-top: 100%;
+    }
+    .container .feature__slide .slide__title {
+        padding-top: 0;
+    }
+    .container .feature__slide .slide__title h2 {
+        width: 100%;
+        margin: 0px;
+        margin-top: 15px;
+    }
+    .container .feature__slide .slide__body .slide__img {
+        width: 452px;
+    }
+    .feature__slide .slide__body {
+        right: 8px;
+    }
+    .container .client .client__info {
+        width: 469px;
+    left: 15px;
+    height: 978px;
+    padding: 40px;
+    }
+    .container .client .client__info .client__description {
+        padding-right: 20px;
+    padding-left: 12px;
+    }
+    .container .client .client__info .client__icon {
+        top: 53%;
+        width: 100%;
+        position: absolute;
+        margin: 0 40px;
+    }
+    .container .client .client__info .client__icon .client__top{
+        flex-wrap: wrap;
+    margin: -80px 100px;
+    }
+    .container .client .client__info .client__icon .client__bottom {
+        flex-wrap: wrap;
+        margin: 70px 100px;
+        justify-content: center;
+    }
+    .container .news {
+        margin-top: 367px;
+        height: 1520px;
+    }
+    .container .news .slide__title {
+        top: 12%;
+        width: 97% !important;
+    }
+    .container .news .news__slide {
+        margin: 0px;
+        margin-top: -30px;
+    }
+    .container .news .news__slide .news__content {
+        width: 465px;
+        height: 523px;
+    }
+    .container .news .news__slide .news__content:nth-child(2) {
+        width: 465px;
+        height: 523px;
+    }
+    .container .footer {
+        height: 1405px;
+        position: relative;
+        top: 450px;
+    }
+    .container .footer .footer__description {
+        width: 100%;
+        left: 15px;
+        top: 45px;
+    }
+    .container .footer .footer__description .footer__component {
+        width: 100%;
+    }
+    .container .footer .footer__description .footer__component:nth-child(4){
+        margin: 0;
+    }
+    .container .footer .footer__info {
+        width: 95%;
+        left: 10px;
+    }
+    .container .footer .footer__info .footer__left {
+        left: 20%;
+    }
+    .container .footer .footer__info .footer__right .footer__input {
+        left: 65px;
+    }
 }
 
 .body {
